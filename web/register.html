@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   
+   <head>
+      <title>Login Page</title>
+      
+      <style type = "text/css">
+         body
+         {
+            font-family:Cambria, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("study.png");   /* 背景图片 */
+            background-repeat: no-repeat;   /* 背景图片不重复 */
+            background-attachment: fixed;
+            background-size: cover;
+         }
+         #bigBox
+         {
+            font-family:Cambria, Helvetica, sans-serif;
+            margin: 0 auto;  /* login框剧中 */
+            margin-top: 30px; /* login框与顶部的距离 */
+            padding: 20px 50px; /* login框内部的距离(内部与输入框和按钮的距离) */
+            background-color: #00000099; /* login框背景颜色和透明度 */
+            width: 400px;
+            height: 660px;
+            border-radius: 10px;   /* 圆角边 */
+            text-align: center; /* 框内所有内容剧中 */
+         }
+          #bigBox h5
+          {
+            color: white; 
+            font-family:Cambria, Helvetica, sans-serif;
+         }
+         #bigBox h1
+         {
+            color: lightseagreen; /* LOGIN字体颜色 */
+            font-family:Cambria, Helvetica, sans-serif;
+         }
+         #bigBox .inputBox
+         {
+            margin-top: 8px;   /* 输入框顶部与LOGIN标题的间距 */
+         }
+         #bigBox .inputBox .inputText
+         {
+            margin-top: 20px;   /* 输入框之间的距离 */
+         }
+         #bigBox .inputBox .inputText input
+         {
+            border: 0; /* 删除输入框边框 */
+            padding: 10px 10px; /* 输入框内的间距 */
+            border-bottom: 1px solid white; /* 输入框白色下划线 */
+            background-color: #00000000; /* 输入框透明 */
+            color: ghostwhite; /* 输入字体的颜色 */
+            font-family:Cambria, Helvetica, sans-serif;
+         }
+
+         #bigBox .loginButton
+         {
+            font-family:Cambria, Helvetica, sans-serif;
+            margin-right: 30px;
+            margin-top: 40px;   /* 按钮顶部与输入框的距离 */
+            width: 100px;
+            height: 25px;
+            color: white; /* 按钮字体颜色 */
+            border: 0; /* 删除按钮边框 */
+            border-radius: 20px;   /* 按钮圆角边 */
+            background-image: linear-gradient(to right, #65da9c 0%, #65daab 0%, #65dace 15%, #65ceda 33%, #65daab 66%, #65da9c 90%);  /* 按钮颜色 */
+         }
+         .m-left{
+            margin-left: 30px;
+         }
+
+         .fgtpwd{
+            position: absolute;
+            margin-bottom: 1000px;
+            right: 10px;
+            color: #ffffff;
+            /*left:  calc(5% - 200px);*/
+            margin-right:666px;
+            /*bottom: 240px;*/
+            font-size: 13px;
+            font-family:Cambria, Helvetica, sans-serif;
+         }
+      </style>
+   </head>
+   <body>
+<div id="bigBox">
+        <h1>Register In</h1>
+        <h5>Join Us!</h5>
+
+        <form id="loginform" action="register.php" method="post">
+            <div class="inputBox">
+                    <div class="inputText">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+                <div class="inputText">
+                   <input type="password" id="password" name="password" placeholder="Password">
+                   <input type="password" id="re_password" name="re_password" placeholder="Re-enter Password">
+                </div>
+                <div class="inputText">
+                   <input type="firstname" id="firstname" name="firstname" placeholder="Your Firstname">
+                </div>
+                <div class="inputText">
+                   <input type="lastname" id="lastname" name="lastname" placeholder="Your Lastname">
+                </div>
+                <div class="inputText">
+                   <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="inputText">
+                   <input type="city" id="city" name="city" placeholder="City">
+                   <input type="state" id="state" name="state" placeholder="State">
+                   <input type="country" id="country" name="country" placeholder="Country">
+                </div>
+                <div class="inputText">
+                  <input type="affilation" id="affilation" name="affilation" placeholder="School/Company">
+                </div>
+                <div style="color: white;font-size: 12px" >
+                </div>
+            </div>
+           <div>
+               <input type="submit" id="registerin" name="registerin" value="Register in" class="loginButton m-left">
+               <a href="Login.html"><input type="button" id="login" name="login" value="I have account" class="loginButton"></a>
+           </div>
+        </form>
+</div>
+
+</body>
